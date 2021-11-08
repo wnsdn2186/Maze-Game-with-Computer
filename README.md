@@ -1,33 +1,27 @@
 # SystemProgramming
 
-#
-*2019-2 시스템 프로그래밍 팀프로젝트 11팀*
-*주제 : 미로찾기 게임                   *
-########################################
+## Description
+- KNU Computer Science and Engineering term project for System Programming
 
-#################게임설명################
-컴퓨터와 미로찾기 대결하는 게임이다.
+## Introduction
+There is a maze search game with a computer.
+1. We used the Ubuntu Linux environment.
+2. We used DFS to make and find a maze.
 
-###########게임 실행전 필수사항###########
-1. 컴파일 시 gcc -o mirror game_process.c maze.c mirror_main.c setting.c -lcurses -lpthread 입력
-2. 실행 파일(mirror)와 같은 디렉토리에 title.txt 파일이 있어야함(시작 화면 구성 위한 파일)
-3. mirror 실행 전에 터미널 크기를 최대화 해야함(터미널 크기 줄인 상태에서 실행 후 다시키우면 화면 깨짐)
+## Development Environment
+- Ubuntu 16.04
+- Linux C
 
-###############게임 실행후###############
+## Caution
+- Title.txt file must exist in the same directory as the executable file.
+- Terminal size needs to be maximized before execution.
+- All files needed for compilation must be in the same directory.
 
-################초기 화면################
-* 방향키 왼쪽, 오른쪽키로 스테이지 설정가능 (1 ~ 15)
-* s키 누르면 해당 스테이지로 시작
-* e키 누르면 종료
+## Run
+- Enter gcc -o mirror game_process.c maze.c mirror_main.c setting.c -lcurses -lpthread when compiling.
+- Use the arrow key to move the character.
+- If you win the stage, print out the time it took to arrive and move to the next stage (current stage +1).
+- As the stage increases, the algorithm speeds up and the maze size increases.
+- If you lose on stage, show the path the computer found and end the game.
 
-################게임 시작################
-* 방향키를 사용해 캐릭터 이동
-* 스테이지에서 이겼을시 해당 스테이지, 도착까지 걸린시간 출력 후 다음스테이지(현재스테이지+1)로 이동
-* 스테이지가 증가하면 컴퓨터 알고리즘 속도도 빨라지고 미로크기도 증가함
-* 스테이지에서 졌을 시 컴퓨터가 찾은 경로를 보여주고 게임 종료
-* 게임 실행도중 Ctrl-C, Ctrl-\ 입력 시 게임종료
-
-#################주의사항#################
-* 컴파일에 필요한 모든 파일은 같은 디렉토리 안에 있어야함
-* game_process.c game_process.h maze.c maze.h mirror_main.c setting.c setting.h title.txt 
 
