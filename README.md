@@ -1,4 +1,4 @@
-# SystemProgramming
+# Mazegame with Computer
 
 ## Description
 - KNU Computer Science and Engineering term project for System Programming
